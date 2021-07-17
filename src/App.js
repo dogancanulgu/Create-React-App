@@ -3,19 +3,29 @@ import './App.css';
 import Header from './components/Header';
 
 const name = "Doğancan";
-const surname = "Ülgü"
+const surname = "Ülgü";
+const isLoggedIn = true;
+
 
 
 function App() {
 
   return <>
-    <h1>{name} {surname}</h1>
-    <h1>{`Benim Adım ${name}, soyadım ${surname}`}</h1>
+    <h1>
+    {isLoggedIn ? `Benim Adım ${name}, soyadım ${surname}` : "Giriş yapmadınız."}
+    </h1>
   </>;
 
 
 
+/****************************************/
 
+  // return <>
+  //   <h1>{name} {surname}</h1>
+  //   <h1>{`Benim Adım ${name}, soyadım ${surname}`}</h1>
+  // </>;
+
+/****************************************/
   // // return React.createElement("div", null, "Hello");
 
   // // return (
