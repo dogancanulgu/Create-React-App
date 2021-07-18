@@ -13,7 +13,13 @@ function App() {
 
   return (
   <>
-    <User name="Doğancan" surname="Ülgü" isLoggedIn={true} age="29"/>
+    <User 
+      name="Doğancan" 
+      surname="Ülgü" 
+      isLoggedIn={true} 
+      age="29"
+      friends = {["Ahmet", "Tayfun", "Gökhan", "Ayşe", "Fatma"]}
+    />
   </>
   );  
 
