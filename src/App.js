@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
+// import Header from './components/Header';
 import User from "./components/User";
 
 // const name = "Doğancan";
@@ -17,8 +17,12 @@ function App() {
       name="Doğancan" 
       surname="Ülgü" 
       isLoggedIn={true} 
-      age="29"
+      age={29}
       friends = {["Ahmet", "Tayfun", "Gökhan", "Ayşe", "Fatma"]}
+      address = {{
+        title: "Şirinevler/İstanbul",
+        zip: 34188
+      }}
     />
   </>
   );  
